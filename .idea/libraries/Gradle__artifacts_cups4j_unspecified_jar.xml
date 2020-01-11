@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: artifacts:cups4j:unspecified@jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/cups4j/build/.transforms/6b21996eb12db889b9621dadcc8c5cd3/cups4j-release/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/cups4j/build/.transforms/6b21996eb12db889b9621dadcc8c5cd3/cups4j-release/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

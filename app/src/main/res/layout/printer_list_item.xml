@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="180dp">
+
+    <ImageView
+        android:id="@+id/printer_sign"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/printer_default" />
+
+    <ImageView
+        android:id="@+id/printer_check_sign"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignBottom="@+id/printer_sign"
+        android:layout_alignRight="@+id/printer_sign"
+        android:background="@drawable/printer_active" />
+
+    <TextView
+        android:id="@+id/printer_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/printer_sign"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="usb"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/print_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/printer_name"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:text="查看打印机详情"
+        android:textColor="@color/deepskyblue"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+</RelativeLayout>

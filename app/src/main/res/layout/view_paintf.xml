@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/ll_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+
+        <Button
+            android:id="@+id/export_file"
+            android:layout_width="140dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/top_btn_bg"
+            android:text="导出文档"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/save_file"
+            android:layout_width="140dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/export_file"
+            android:background="@drawable/top_btn_bg"
+            android:text="保存文档"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/open_file"
+            android:layout_width="140dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/save_file"
+            android:background="@drawable/top_btn_bg"
+            android:text="打开存储病例"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/print_file"
+            android:layout_width="140dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/open_file"
+            android:background="@drawable/top_btn_bg"
+            android:text="打印报告"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/print_file_step"
+            android:layout_width="140dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/print_file"
+            android:background="@drawable/top_btn_bg"
+            android:text="查看明细"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/printf_pageIndex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"
+            android:text="--/--"
+            android:textColor="@color/text_color_common_normal"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+
+        android:id="@+id/screen_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ll_btn"
+        android:layout_below="@id/base_top"
+        android:orientation="vertical">
+
+        <include layout="@layout/view_look" />
+
+        <LinearLayout
+            android:id="@+id/warming"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5">
+
+            <include
+                layout="@layout/view_warming"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_lump"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <include
+                layout="@layout/view_bottom_lump"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

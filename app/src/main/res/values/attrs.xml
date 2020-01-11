@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MyLineChartView">
+        <attr name="expend_color" format="color" />
+        <attr name="income_color" format="color" />
+        <attr name="table_color" format="color" />
+        <attr name="tabletext_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="DropEditText">
+        <attr name="drawableRight" format="reference" />
+        <attr name="dropMode">
+            <enum name="flow_parent" value="0" />
+            <enum name="wrap_content" value="1" />
+        </attr>
+        <attr name="hint" format="string|reference" />
+    </declare-styleable>
+</resources>

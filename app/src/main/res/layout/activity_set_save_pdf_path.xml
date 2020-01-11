@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    tools:context=".activity.SetSavePdfPathActivity">
+
+    <com.l.eyescure.view.TopBarView
+        android:id="@+id/save_view_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/set_save_path_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/save_view_top"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:text="请选择存储设备并点击确定。设置成功后，文件将存储在选定存储设备的根目录下，以主治医生名字命名的文件目录下。" />
+
+    <RelativeLayout
+        android:id="@+id/storages_tf_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/set_save_path_notice"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/storage_tf_tex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="外置TF卡:"
+            android:textColor="@color/text_color_common_normal"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/storage_tf_con"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/storage_tf_tex"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/storage_tf_sign"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/storage_sd" />
+
+            <ImageView
+                android:id="@+id/storage_tf_check_sign"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignBottom="@+id/storage_tf_sign"
+                android:layout_alignRight="@+id/storage_tf_sign"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/storage_checked_n" />
+
+            <TextView
+                android:id="@+id/storage_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/storage_tf_sign"
+                android:layout_marginTop="5dp"
+                android:text="external_sd"
+                android:textColor="@color/text_color_common_normal"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/storage_tf_con"
+            android:layout_marginTop="10dp"
+            android:text="USB:"
+            android:textColor="@color/text_color_common_normal"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/storages_list_preview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/storages_tx_ok"
+        android:layout_below="@+id/storages_tf_btn"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp"
+        android:visibility="visible">
+
+        <GridView
+            android:id="@+id/storages_gv_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnWidth="90dp"
+            android:gravity="center"
+            android:horizontalSpacing="3dp"
+            android:numColumns="6"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="3dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/storages_tx_ok"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/login_btn1_bg"
+        android:gravity="center"
+        android:text="确   定"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</RelativeLayout>

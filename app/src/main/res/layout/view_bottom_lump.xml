@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/lump_bg">
+
+            <TextView
+                android:id="@+id/tv_right_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="眼睑压力(PSI)"
+                android:textColor="@color/tv_green" />
+
+            <View
+                android:id="@+id/vw_right_one_line"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/y1"
+                android:layout_below="@id/tv_right_tag"
+                android:background="@color/lump_text" />
+
+            <LinearLayout
+                android:id="@+id/ll_right_tag"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/vw_right_one_line"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_right_eye_stress"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        android:background="@color/white"
+                        android:orientation="horizontal" />
+
+                    <include
+                        layout="@layout/layout_bottom2"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:background="@color/lump_bg"
+                        android:gravity="right"
+                        android:paddingRight="10dp"
+                        android:text="分钟(M)"
+                        android:textColor="@color/tv_green" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/right_eye_stress_control"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="9"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/right_eye_stress_plus"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_gray_bg"
+                        android:gravity="center"
+                        android:text="增加"
+                        android:textColor="@color/white"
+                        android:textSize="13sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp" />
+
+                    <TextView
+                        android:id="@+id/right_eye_stress_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="5.3PSI"
+                        android:textColor="@color/tv_green" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp" />
+
+                    <TextView
+                        android:id="@+id/right_eye_stress_minus"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_gray_bg"
+                        android:gravity="center"
+                        android:text="减少"
+                        android:textColor="@color/white"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/lump_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_right_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="眼睑温度(℃)"
+                android:textColor="@color/tv_green" />
+
+            <View
+                android:id="@+id/vw_right_two_line"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/y1"
+                android:layout_below="@id/tv_right_bottom"
+                android:background="@color/lump_text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/vw_right_two_line"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_right_temp"
+                        android:layout_width="match_parent"
+                        android:layout_height="210dp"
+                        android:layout_weight="8"
+                        android:background="@color/white"
+                        android:orientation="horizontal" />
+
+                    <include
+                        layout="@layout/layout_bottom3"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:background="@color/lump_bg"
+                        android:gravity="right"
+                        android:paddingRight="10dp"
+                        android:text="分钟(M)"
+                        android:textColor="@color/tv_green" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/right_temp_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="9"
+                    android:gravity="center"
+                    android:textColor="@color/tv_red"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="10dp"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/lump_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_left_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="眼睑压力(PSI)"
+                android:textColor="@color/tv_green" />
+
+            <View
+                android:id="@+id/vw_left_one_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y1"
+                android:layout_below="@id/tv_left_tag"
+                android:background="@color/lump_text" />
+
+            <LinearLayout
+                android:id="@+id/ll_left_tag"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/vw_left_one_line"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_left_eye_stress"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        android:background="@color/white"
+                        android:orientation="horizontal" />
+
+                    <include
+                        layout="@layout/layout_bottom_rb"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:background="@color/lump_bg"
+                        android:gravity="right"
+                        android:paddingRight="10dp"
+                        android:text="分钟(M)"
+                        android:textColor="@color/tv_green" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/left_eye_stress_control"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="9"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/left_eye_stress_plus"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_gray_bg"
+                        android:gravity="center"
+                        android:text="增加"
+
+                        android:textColor="@color/white"
+                        android:textSize="13sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp" />
+
+                    <TextView
+                        android:id="@+id/left_eye_stress_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="5.3PSI"
+                        android:textColor="@color/tv_green" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp" />
+
+                    <TextView
+                        android:id="@+id/left_eye_stress_minus"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_gray_bg"
+                        android:gravity="center"
+                        android:text="减少"
+                        android:textColor="@color/white"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/lump_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_left_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="眼睑温度(℃)"
+                android:textColor="@color/tv_green" />
+
+            <View
+                android:id="@+id/vw_left_two_line"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/y1"
+                android:layout_below="@id/tv_left_bottom"
+                android:background="@color/lump_text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/vw_left_two_line"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_left_temp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        android:background="@color/white"
+                        android:orientation="horizontal" />
+
+                    <include
+                        layout="@layout/layout_bottom_rc"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:background="@color/lump_bg"
+                        android:gravity="right"
+                        android:paddingRight="10dp"
+                        android:text="分钟(M)"
+                        android:textColor="@color/tv_green" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/left_temp_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="9"
+                    android:gravity="center"
+                    android:textColor="@color/tv_red"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

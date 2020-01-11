@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg"
+    tools:context=".activity.CureStepActivity">
+
+    <include
+        android:id="@+id/base_top"
+        layout="@layout/view_base" />
+
+    <LinearLayout
+        android:id="@+id/cure_step_screen_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/cure_step_notice"
+        android:layout_below="@+id/base_top"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/view_look" />
+
+        <TextView
+            android:id="@+id/cure_step_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:text="治疗明细"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/activity_bg">
+
+            <ListView
+                android:id="@+id/cure_step_listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:divider="#00000000"
+                android:dividerHeight="0dip"
+                android:padding="10dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/cure_step_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cure_step_back_print"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="50dp"
+        android:text="获取治疗明细"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/cure_step_back_print"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/top_btn_bg"
+        android:text="返回波形图"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/cure_step_export_file"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:text="导出明细"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@+id/cure_step_back_print"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@+id/cure_step_back_print"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/top_btn_bg"/>
+
+    <Button
+        android:id="@+id/cure_step_save_file"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:text="保存明细"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@+id/cure_step_export_file"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@+id/cure_step_back_print"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/top_btn_bg" />
+
+    <Button
+        android:id="@+id/cure_step_print"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@+id/cure_step_back_print"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/cure_step_save_file"
+        android:background="@drawable/top_btn_bg"
+        android:text="打印明细"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

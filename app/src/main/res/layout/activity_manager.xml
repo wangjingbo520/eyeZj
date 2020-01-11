@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg">
+    <com.l.eyescure.view.TopBarView
+        android:id="@+id/account_manager_view_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+
+    <LinearLayout
+        android:id="@+id/account_tab_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/top_title_bg"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/account_manager_view_top"
+        android:layout_marginTop="1px"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:text="帐号"/>
+        <View
+            android:layout_width="@dimen/x1"
+            android:layout_height="match_parent"
+            android:background="@color/main_line"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:text="昵称"/>
+        <View
+            android:layout_width="@dimen/x1"
+            android:layout_height="match_parent"
+            android:background="@color/main_line"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:text="创建时间"/>
+        <View
+            android:layout_width="@dimen/x1"
+            android:layout_height="match_parent"
+            android:background="@color/main_line"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:text="是否管理员"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/add_account_rl"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/account_tab_title"
+        android:layout_marginTop="10dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/add_account_sign"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/add_account_1"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:textColor="@color/top_title_bg"
+                android:textSize="15sp"
+                android:layout_toRightOf="@+id/add_account_sign"
+                android:layout_marginLeft="10dp"
+                android:text="增加用户"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_below="@+id/add_account_rl"
+        android:layout_marginTop="10dp"
+        android:id="@+id/manager_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_line_gray"
+    tools:context="com.l.eyescure.activity.PrinterActivity">
+
+    <com.l.eyescure.view.TopBarView
+        android:id="@+id/printer_view_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/printer_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/printer_view_top"
+        android:background="@color/main_line" />
+
+    <RelativeLayout
+        android:id="@+id/printer_info"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@+id/printer_line"
+        android:background="@drawable/top_btn_bg">
+
+        <ImageView
+            android:id="@+id/printer_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="70dp"
+            android:background="@drawable/small_printer" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/printer_img"
+            android:layout_toRightOf="@+id/printer_img"
+            android:layout_marginLeft="30dp">
+
+            <TextView
+                android:id="@+id/printer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="名称："
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/printer_zhiliang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/printer_name"
+                android:layout_marginTop="10dp"
+                android:text="质量："
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/printer_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/printer_zhiliang"
+                android:layout_marginTop="10dp"
+                android:text="状态："
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/printer_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/printer_name"
+                android:layout_marginLeft="200dp"
+                android:layout_toRightOf="@+id/printer_name"
+                android:text="幅度："
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/printer_info">
+
+        <LinearLayout
+            android:id="@+id/printer_view_list_top"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/line_one"
+            android:background="@color/top_title_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="任务名"
+                android:textColor="@color/white" />
+
+            <View
+                android:layout_width="@dimen/x1"
+                android:layout_height="match_parent"
+                android:background="@color/main_line" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="任务状态"
+                android:textColor="@color/white" />
+
+            <View
+                android:layout_width="@dimen/x1"
+                android:layout_height="match_parent"
+                android:background="@color/main_line" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="创建时间"
+                android:textColor="@color/white" />
+
+            <View
+                android:layout_width="@dimen/x1"
+                android:layout_height="match_parent"
+                android:background="@color/main_line" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="所有者"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/print_jobs_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/printer_view_list_top"
+            android:background="@color/main_bg" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

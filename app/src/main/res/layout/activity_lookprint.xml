@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg">
+    <include
+        android:id="@+id/base_top"
+        layout="@layout/view_base"/>
+
+    <LinearLayout
+        android:id="@+id/print_page_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/base_top"
+        android:orientation="vertical" />
+</RelativeLayout>

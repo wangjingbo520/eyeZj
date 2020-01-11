@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:drop="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_base" />
+
+    <RelativeLayout
+        android:id="@+id/login_user_container"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/login_btn_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/login_lump_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="用户名称："
+                android:textColor="@color/black" />
+        </RelativeLayout>
+
+        <com.l.eyescure.view.DropEditText
+            android:id="@+id/login_user_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="80dp"
+            android:background="@null"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:padding="5dp"
+            drop:drawableRight="@drawable/drop"
+            drop:dropMode="flow_parent"></com.l.eyescure.view.DropEditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pwd_re"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/login_user_container"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/login_btn_bg"
+        android:layout_marginTop="20dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/login_lump_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="用户密码："
+                android:textColor="@color/black" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/login_pwd_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="80dp"
+            android:background="@null"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:padding="5dp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/login_ok"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_alignTop="@id/pwd_re"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/pwd_re"
+        android:background="@drawable/login_btn1_bg"
+        android:onClick="onClick"
+        android:text="确定"
+        android:textSize="17sp" />
+
+    <RelativeLayout
+        android:id ="@+id/login_switch_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pwd_re"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/switch_net_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:text="切换为本地模式"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/lightslategrey"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_below="@+id/switch_net_mode"
+            android:background="@color/lightslategrey"
+            android:layout_alignLeft="@+id/switch_net_mode"
+            android:layout_alignRight="@+id/switch_net_mode"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/login_container_setip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_switch_mode"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/login_set_ip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:text="设置服务器IP"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/lightslategrey"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_below="@+id/login_set_ip"
+            android:background="@color/lightslategrey"
+            android:layout_alignLeft="@+id/login_set_ip"
+            android:layout_alignRight="@+id/login_set_ip"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/super_back_door"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:clickable="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

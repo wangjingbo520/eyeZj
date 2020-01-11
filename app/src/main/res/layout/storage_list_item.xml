@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:layout_height="100dp">
+
+    <ImageView
+        android:id="@+id/storage_sign"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/storage_usb"/>
+
+    <ImageView
+        android:id="@+id/storage_check_sign"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/storage_checked_n"
+        android:layout_alignBottom="@+id/storage_sign"
+        android:layout_alignRight="@+id/storage_sign"/>
+
+    <TextView
+        android:id="@+id/storage_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/storage_sign"
+        android:layout_marginTop="5dp"
+        android:text="usb"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black"/>
+
+</RelativeLayout>

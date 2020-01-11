@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text666"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="left"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="16sp"
+        android:text="删除用户，该用户将不能登录，但不会删除该用户的病人数据。\n请谨慎删除用户！\n修改用户密码，将会强制忽略用户旧密码，只有采用新密码才能登录！"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:id="@+id/item_detele"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="删除用户"
+            android:gravity="center"
+            android:background="@color/activity_bg"
+            android:textColor="@color/tv_red"
+            />
+        <View
+            android:layout_width="1px"
+            android:layout_height="45dp" />
+        <TextView
+            android:id="@+id/item_edit"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@color/activity_bg"
+            android:textColor="@color/tv_green"
+            android:text="修改用户密码"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

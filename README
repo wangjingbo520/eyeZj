@@ -1,0 +1,15 @@
+库文件：
+    1、日志输入 Logger
+        example:  Logger.d("hello");
+                  Logger.e("hello");
+                  Logger.w("hello");
+                  Logger.v("hello");
+                  Logger.wtf("hello");
+                  Logger.json(JSON_CONTENT);
+                  Logger.xml(XML_CONTENT);
+                  Logger.log(DEBUG, "tag", "message", throwable);
+                  Logger.d(list);
+                  Logger.d(map);
+                  Logger.d(set);
+                  Logger.d(new String[]);
+    2、图片加载 Picasso

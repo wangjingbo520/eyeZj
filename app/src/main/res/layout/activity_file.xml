@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg">
+    <com.l.eyescure.view.TopBarView
+        android:id="@+id/file_view_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/file_add"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:textColor="@color/text333"
+        android:textSize="16sp"
+        android:background="@drawable/login_btn1_bg"
+        android:text="新增病例"/>
+    <TextView
+        android:id="@+id/file_search"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/file_add"
+        android:textColor="@color/text333"
+        android:background="@drawable/login_btn1_bg"
+        android:text="搜索病例"/>
+    <!--<Button
+        android:id="@+id/setting_time_manage"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/setting_pwd_manage"
+        android:background="@drawable/login_btn1_bg"
+        android:layout_marginTop="15dp"
+        android:text="打印机设定"/>
+    <Button
+        android:id="@+id/setting_exit"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/setting_time_manage"
+        android:background="@drawable/login_btn1_bg"
+        android:layout_marginTop="15dp"
+        android:text="退出程序"/>-->
+
+
+</RelativeLayout>

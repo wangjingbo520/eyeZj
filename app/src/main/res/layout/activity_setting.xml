@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg">
+    <com.l.eyescure.view.TopBarView
+        android:id="@+id/set_view_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/setting_user_manage"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:background="@drawable/login_btn1_bg"
+        android:text="用户管理"/>
+
+    <TextView
+        android:id="@+id/setting_pwd_manage"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/setting_user_manage"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/login_btn1_bg"
+        android:text="密码管理"/>
+    <TextView
+        android:id="@+id/setting_save1_manage"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/setting_pwd_manage"
+        android:background="@drawable/login_btn1_bg"
+        android:layout_marginTop="15dp"
+        android:text="导出文档设定"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/setting_save2_manage"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/setting_save1_manage"
+        android:background="@drawable/login_btn1_bg"
+        android:layout_marginTop="15dp"
+        android:text="保存文档设定"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/setting_printer_type"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/setting_save2_manage"
+        android:background="@drawable/login_btn1_bg"
+        android:layout_marginTop="15dp"
+        android:text="打印机选择"/>
+
+    <TextView
+        android:id="@+id/setting_printer_info"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/setting_printer_type"
+        android:background="@drawable/login_btn1_bg"
+        android:layout_marginTop="15dp"
+        android:text="打印机信息"/>
+
+    <TextView
+        android:id="@+id/setting_time_data"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/setting_printer_info"
+        android:background="@drawable/login_btn1_bg"
+        android:layout_marginTop="15dp"
+        android:text="时间设置"/>
+
+    <TextView
+        android:id="@+id/setting_wifi"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/setting_time_data"
+        android:background="@drawable/login_btn1_bg"
+        android:layout_marginTop="15dp"
+        android:text="Wifi设置"/>
+
+</RelativeLayout>
